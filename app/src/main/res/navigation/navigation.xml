@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menjar_fragment">
+    <fragment
+        android:id="@+id/menjar_fragment"
+        android:name="com.faixeda.projectecafeteriaroger2.home.menjar.MenjarFragment"
+        android:label="fragment_menjar_fragment"
+        tools:layout="@layout/menjar_fragment" >
+        <action
+            android:id="@+id/action_menjar_fragment_to_beguda_fragment"
+            app:destination="@id/beguda_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beguda_fragment"
+        android:name="com.faixeda.projectecafeteriaroger2.home.beguda.BegudaFragment"
+        android:label="fragment_beguda_fragment"
+        tools:layout="@layout/beguda_fragment" >
+        <action
+            android:id="@+id/action_beguda_fragment_to_postre_fragment"
+            app:destination="@id/postre_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postre_fragment"
+        android:name="com.faixeda.projectecafeteriaroger2.home.postre.PostreFragment"
+        android:label="fragment_postre_fragment"
+        tools:layout="@layout/postre_fragment" >
+        <action
+            android:id="@+id/action_postre_fragment_to_pagar_fragment"
+            app:destination="@id/pagar_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagar_fragment"
+        android:name="com.faixeda.projectecafeteriaroger2.home.pagar.PagarFragment"
+        android:label="fragment_pagar_fragment"
+        tools:layout="@layout/pagar_fragment" />
+</navigation>

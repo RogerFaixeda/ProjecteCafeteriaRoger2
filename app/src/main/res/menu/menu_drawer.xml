@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menjar_fragment"
+            android:icon="@drawable/baseline_fastfood_24"
+            android:title="@string/menjars" />
+        <item
+            android:id="@+id/beguda_fragment"
+            android:icon="@drawable/baseline_local_drink_24"
+            android:title="@string/beguda"/>
+        <item
+            android:id="@+id/postre_fragment"
+            android:icon="@drawable/baseline_cake_24"
+            android:title="@string/postres">
+        </item>
+        <item
+            android:id="@+id/pagar_fragment"
+            android:icon="@drawable/baseline_credit_card_24"
+            android:title="@string/pagament">
+        </item>
+    </group>
+</menu>
